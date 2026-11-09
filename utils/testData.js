@@ -1,21 +1,11 @@
-const path = require('path');
-const dotenv = require('dotenv');
-
-dotenv.config({ path: path.resolve(__dirname, '..', '.env') });
-
-const credentials = {
-  username: process.env.ORANGEHRM_USERNAME,
-  password: process.env.ORANGEHRM_PASSWORD,
+const validUser = {
+  username: process.env.ORANGE_USERNAME,
+  password: process.env.ORANGE_PASSWORD,
 };
 
-function getCredentials() {
-  if (!credentials.username || !credentials.password) {
-    throw new Error(
-      'Set ORANGEHRM_USERNAME and ORANGEHRM_PASSWORD in the project .env file.'
-    );
-  }
+const invalidUser = {
+  username: 'Admin',
+  password: 'admin123456',
+};
 
-  return credentials;
-}
-
-module.exports = { getCredentials };
+module.exports = { validUser, invalidUser };

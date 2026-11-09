@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","10719","valid login shows the dashboard","chromium","2026-11-09","passed","2026-11-09","OrangeHRM login","login.spec.js","",""
+"","16272","valid login, logout, then invalid login shows an error","chromium","2026-11-09","passed","2026-11-09","OrangeHRM login","login.spec.js","",""
+"","6165","invalid credentials show an error and keep user on login page","chromium","2026-11-09","passed","2026-11-09","OrangeHRM login","login.spec.js","",""
